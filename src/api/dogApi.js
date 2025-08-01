@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/api/dogbreeds";
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export async function fetchDogs() {
   const res = await fetch(BASE_URL);
