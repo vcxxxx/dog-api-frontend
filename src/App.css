@@ -9,40 +9,41 @@
 
 /* === Main Container === */
 .dog-container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 100%;
   box-sizing: border-box;
-  flex-grow: 1;
 }
+
 
 /* === Header === */
 .dog-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
   text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 /* === Search Input === */
 .dog-search-input {
-  padding: 16px 20px;
-  font-size: 18px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* === Add Form === */
+
+/* === Add Form ===  CHECK*/
 .dog-add-form {
   display: flex;
   flex-wrap: wrap;
@@ -60,16 +61,14 @@
 }
 
 .dog-button {
-  padding: 14px 28px;
-  font-size: 18px;
-  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
   border: none;
-  border-radius: 8px;
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  transition: background-color 0.2s;
-  min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .dog-button:hover {
@@ -90,40 +89,30 @@
   background-color: #545b62;
 }
 
-/* === Dog List === */
 .dog-list-container {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fafafa;
-  padding: 20px;
-  max-height: 1200px;
+  flex: 1;
   overflow-y: auto;
-  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 16px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
+
 
 /* === Individual Dog Item === */
 .dog-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #eee;
-  padding: 16px 20px;
-  border-radius: 8px;
-  flex-wrap: wrap;
-  gap: 16px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
 }
 
 .dog-text {
   font-size: 24px;
-  color: #333;
-  flex: 1;
-  min-width: 200px;
-  word-break: break-word;
+  color: #222;
 }
 
 .dog-button-group {
@@ -134,12 +123,12 @@
 
 /* === Edit Input === */
 .dog-edit-input {
-  padding: 12px 16px;
-  font-size: 18px;
+  padding: 8px 12px;
+  font-size: 16px;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 /* === Error Message === */
