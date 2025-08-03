@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./styles";
 
 export default function ErrorMessage({ message }) {
   return (
-    <p role="alert" style={styles.error}>
+    <p role="alert" className="dog-error">
       Error: {message}
     </p>
   );

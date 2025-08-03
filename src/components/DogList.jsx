@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { fetchDogs, createDog, updateDog, deleteDog } from "../../api/dogApi";
+import { fetchDogs, createDog, updateDog, deleteDog } from "../api/dogApi";
 import DogItem from "./DogItem";
 import AddDogForm from "./AddDogForm";
 import SearchBar from "./SearchBar";
 import ErrorMessage from "./ErrorMessage";
-import styles from "./styles";
 
 function parseApiError(error) {
   try {
@@ -82,12 +81,12 @@ const handleAddDog = async (newDog) => {
   if (loading) return <p style={{ textAlign: "center" }}>Loading...</p>;
 
   return (
-    <div style={styles.container} aria-label="Dog List Section">
-      <h2 style={styles.title} tabIndex="0">Dogs Web API</h2>
+    <div className="dog-container" aria-label="Dog List Section">
+      <h2 className="dog-title" tabIndex="0">Dogs Web API</h2>
       {error && <ErrorMessage message={error} />}
       <SearchBar value={searchTerm} onChange={setSearchTerm} />
       <AddDogForm onAdd={handleAddDog} />
-      <div style={styles.dogListContainer}>
+      <div className="dog-list-container">
         {filteredDogs.length === 0 ? (
           <p style={{ textAlign: "center", color: "#666" }} role="status">No dogs found.</p>
         ) : (

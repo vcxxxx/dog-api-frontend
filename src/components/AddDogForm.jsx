@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./styles";
 
 export default function AddDogForm({ onAdd }) {
   const [newBreed, setNewBreed] = useState("");
@@ -23,8 +22,8 @@ export default function AddDogForm({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={styles.addForm}>
-      {error && <p style={styles.error}>{error}</p>}
+    <form onSubmit={handleSubmit} className="dog-add-form">
+      {error && <p className="dog-error">{error}</p>}
       <input
         type="text"
         id="breed"
@@ -32,7 +31,7 @@ export default function AddDogForm({ onAdd }) {
         placeholder="Breed"
         value={newBreed}
         onChange={(e) => setNewBreed(e.target.value)}
-        style={styles.input}
+        className="dog-input"
       />
       <input
         type="text"
@@ -41,16 +40,12 @@ export default function AddDogForm({ onAdd }) {
         placeholder="Sub-breed (optional)"
         value={newSubBreed}
         onChange={(e) => setNewSubBreed(e.target.value)}
-        style={styles.input}
+        className="dog-input"
       />
       <button
         type="submit"
         disabled={!newBreed.trim()}
-        style={{
-          ...styles.button,
-          opacity: !newBreed.trim() ? 0.6 : 1,
-          cursor: !newBreed.trim() ? "not-allowed" : "pointer",
-        }}
+        className={"dog-button"}
       >
         Add
       </button>
