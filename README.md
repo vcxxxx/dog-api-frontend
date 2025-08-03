@@ -28,7 +28,7 @@ Prerequisites
  
 	• Backend server running locally at http://localhost:8080 (see dog-api-backend)
 
- ## Installation
+ Installation
 
  ```
 git clone https://github.com/your-username/dogs-web-frontend.git
@@ -36,7 +36,7 @@ cd dogs-web-frontend
 npm install
 ```
 
- ## Running the App
+ Running the App
  ```
 npm start
 ```
