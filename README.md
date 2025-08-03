@@ -15,7 +15,7 @@ The frontend is a React application built using [Create React App](https://githu
 ## 🛠 Tech Stack
 
 - **Frontend:** React, JavaScript, CSS
-- **Backend (External):** Spring Boot (see [dog-api-backend](https://github.com/vcxxxx/dog-api-backend)
+- **Backend (External):** Spring Boot (see [dog-api-backend](https://github.com/vcxxxx/dog-api-backend))
 ---
 
 ## Getting Started
