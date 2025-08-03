@@ -23,8 +23,10 @@ The frontend is a React application built using [Create React App](https://githu
 To run the app locally:
 
 Prerequisites
-	•	Node.js and npm installed
-	•	Backend server running locally at http://localhost:8080 (see dog-api-backend)
+
+	• Node.js and npm installed
+ 
+	• Backend server running locally at http://localhost:8080 (see dog-api-backend)
 
  ## Installation
 
