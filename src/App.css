@@ -91,6 +91,7 @@
 
 .dog-list-container {
   flex: 1;
+  margin-top: 12px;
   overflow-y: auto;
   border: 1px solid #ddd;
   border-radius: 8px;
