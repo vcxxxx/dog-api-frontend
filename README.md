@@ -10,6 +10,8 @@ The frontend is a React application built using [Create React App](https://githu
 
 [Live Application URL](https://dog-api-frontend.vercel.app)
 
+> **Note:** The backend API is hosted on [Render](https://render.com). On the free plan, the server may spin down after periods of inactivity. If so, the first request can take **2–3 minutes** to respond while it restarts.
+
 ---
 
 ## Tech Stack
