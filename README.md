@@ -31,7 +31,7 @@ Prerequisites
  Installation
 
  ```
-git clone https://github.com/your-username/dogs-web-frontend.git
+git clone https://github.com/vcxxxx/dog-api-frontend.git
 cd dogs-web-frontend
 npm install
 ```
